@@ -20,8 +20,8 @@ This project utilizes a virtual environment to manage dependencies. Here is a qu
    # Activate the new virtual environment
    conda activate myenv
 
-3. **Install dependencies using Conda:**
-    conda install -c huggingface -c conda-forge tokenizers gradio pytorch transformers sentencepiece accelerate einops
+## Install dependencies using Conda
+   - conda install -c huggingface -c conda-forge tokenizers gradio pytorch transformers sentencepiece accelerate einops
 
-4. **Run the chatbot script:**
-    python src/chatbot3.py
+## Run the chatbot script
+   - python src/chatbot3.py
