@@ -2,30 +2,26 @@
 
 This project is an initial functional and simple approach to building a chatbot using Gradio and the microsoft/phi-2 language model.
 
-## Setup
+## Virtual Environment
 
-1. Clone the repository:
+This project utilizes a virtual environment to manage dependencies. Here is a quick guide to setting up the environment and running the project:
 
-    ```bash
-    git clone https://github.com/jleir0/chatbot.git
-    ```
+1. **Anaconda Installation:**
+   - Download and install [Anaconda](https://www.anaconda.com/products/individual).
 
-2. Navigate to the project directory:
+2. **Creating the Environment:**
+   ```bash
+   # Activate your Anaconda base environment (if not already activated)
+   conda activate base
+   
+   # Create a new virtual environment named "myenv" with Python 3.10
+   conda create -n myenv python=3.10
+   
+   # Activate the new virtual environment
+   conda activate myenv
 
-    ```bash
-    cd chatbot
-    ```
+3. **Install dependencies using Conda:**
+    conda install -c huggingface -c conda-forge tokenizers gradio pytorch transformers sentencepiece accelerate einops
 
-3. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Usage
-
-Run the chatbot script:
-
-```bash
-python src/chatbot.py
-
+4. **Run the chatbot script:**
+    python src/chatbot3.py
